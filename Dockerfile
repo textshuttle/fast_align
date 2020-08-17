@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./* /opt/fast_align/
 
-RUN cd /opt/fastalign \
+RUN cd /opt/fast_align \
     && mkdir build \
     && cd build \
     && cmake .. \
