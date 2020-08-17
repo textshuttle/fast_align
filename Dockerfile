@@ -7,7 +7,9 @@ RUN apt-get update && apt-get install -y \
     g++ \
     libgoogle-perftools-dev
 
-COPY ./* /opt/fast_align/
+COPY ./src /opt/fast_align/src
+COPY ./cmake /opt/fast_align/cmake
+COPY ./CMakeLists.txt /opt/fast_align/CMakeLists.txt
 
 RUN cd /opt/fast_align \
     && mkdir build \
